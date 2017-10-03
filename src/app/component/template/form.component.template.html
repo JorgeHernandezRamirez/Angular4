@@ -1,0 +1,37 @@
+<form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  Name: <input  id="name" formControlName="name"  placeholder="Enter Name">
+  Age: <input formControlName="age"  placeholder="Enter Age">
+  <button type="submit">Submit</button>
+</form>
+
+<p>Form status: {{ userForm.status | json }}</p>
+<p>Valor: {{ userForm.value.name | json }}</p>
+<p>Status name: {{ userForm.controls.name.valid | json }}</p>
+<p [hidden]="userForm.controls.name.valid" class="text-danger">
+  El nombre es requerido
+</p>
+<p [hidden]="userForm.controls.age.valid" class="text-danger">
+  El año debe contener dos caracteres como maximo y es requerido
+</p>
+
+<div *ngIf="player != undefined">
+  El jugador seleccionado es {{player.name}}
+</div>
+<input #idPlayerVar [(ngModel)]="idPlayer" placeholder="id" />
+<button (click)="find(idPlayerVar.value)">Buscar jugador</button>
+
+<h1>Players</h1>
+<div *ngFor="let player of players | async">
+  <div>
+    <span>{{player.name}}</span>
+    <a (click)="find(player.id)">Ver</a>
+    <a (click)="delete(player.id)">Eliminar</a>
+  </div>
+</div>
+
+<h1>Alta jugador</h1>
+<input #newPlayerId placeholder="Id del nuevo jugador" />
+<input #newPlayerName placeholder="Nombre del nuevo jugador" />
+<button (click)="create(newPlayerId.value, newPlayerName.value)">Nuevo jugador</button>
+
+{{errorMessage}}
