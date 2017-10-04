@@ -1,7 +1,7 @@
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 
-export class JHR {
+export class Counter {
   
   private _count = 0;
   private _value = new BehaviorSubject<number>(this._count);
