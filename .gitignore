@@ -23,3 +23,5 @@ hs_err_pid*
 *.iml
 node_modules
 src/app/**.js
+src/app/**.js.map
+.idea
