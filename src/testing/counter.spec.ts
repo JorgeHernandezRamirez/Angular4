@@ -1,5 +1,5 @@
 
-import { Counter } from './counter.js';
+import { Counter } from './counter';
 
 describe('Counter', () => {
   let counter: Counter;

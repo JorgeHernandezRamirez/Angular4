@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var counter_js_1 = require("./counter.js");
+var counter_1 = require("./counter");
 describe('Counter', function () {
     var counter;
     beforeEach(function () {
-        counter = new counter_js_1.Counter();
+        counter = new counter_1.Counter();
     });
     it('should increase value of counter when incremented', function () {
         counter.increment();
