@@ -8,12 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var form_component_1 = require("./component/form.component");
-var dashboard_counter_component_1 = require("./component/dashboard.counter.component");
+var form_component_1 = require("./component/form/form.component");
+var interaction_component_1 = require("./component/interaction/interaction.component");
+var databinding_counter_component_1 = require("./component/databinding/databinding.counter.component");
 var routes = [
     { path: '', redirectTo: '/form', pathMatch: 'full' },
     { path: 'form', component: form_component_1.FormComponent },
-    { path: 'counter', component: dashboard_counter_component_1.DashboardCounterComponent }
+    { path: 'databinding', component: databinding_counter_component_1.DataBindingComponent },
+    { path: 'interaction', component: interaction_component_1.InteractionComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

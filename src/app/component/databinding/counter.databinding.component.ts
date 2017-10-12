@@ -2,11 +2,11 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
 import "rxjs/add/operator/catch";
 
 @Component({
-  selector: 'counter',
+  selector: 'counter-databinding',
   templateUrl: './template/counter.component.template.html',
   styleUrls: [ './style/counter.component.css' ]
 })
-export class CounterComponent {
+export class ChildDataBindingComponent {
 
   @Input('value')
   private varValue: number;

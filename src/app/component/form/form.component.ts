@@ -1,9 +1,9 @@
 import {Component, OnInit} from "@angular/core";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {Player} from "./player";
+import {Player} from "../../service/player";
 import {Observable} from "rxjs/Observable";
-import {IPlayerService} from "../service/IPlayerService";
 import "rxjs/add/operator/catch";
+import {IPlayerService} from "../../service/IPlayerService";
 
 @Component({
   selector: 'my-test-form',

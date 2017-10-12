@@ -24,4 +24,6 @@ hs_err_pid*
 node_modules
 src/app/**.js
 src/app/**.js.map
+src/testing/**.js
+src/testing/**.js.map
 .idea

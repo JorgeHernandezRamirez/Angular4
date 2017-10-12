@@ -6,7 +6,8 @@ import { Component }          from '@angular/core';
     <h1>{{title}}</h1>
     <nav>
       <a routerLink="/form" routerLinkActive="active">Formulario</a>
-      <a routerLink="/counter" routerLinkActive="active">DataBiding</a>
+      <a routerLink="/databinding" routerLinkActive="active">Databiding</a>
+      <a routerLink="/interaction" routerLinkActive="active">Interacción entre componentes</a>
     </nav>
     <router-outlet></router-outlet>
   `

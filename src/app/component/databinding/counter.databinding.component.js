@@ -11,11 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 require("rxjs/add/operator/catch");
-var CounterComponent = (function () {
-    function CounterComponent() {
+var ChildDataBindingComponent = (function () {
+    function ChildDataBindingComponent() {
         this.varValueChangeEventEmitter = new core_1.EventEmitter();
     }
-    Object.defineProperty(CounterComponent.prototype, "value", {
+    Object.defineProperty(ChildDataBindingComponent.prototype, "value", {
         get: function () {
             return this.varValue;
         },
@@ -26,29 +26,29 @@ var CounterComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    CounterComponent.prototype.decrement = function () {
+    ChildDataBindingComponent.prototype.decrement = function () {
         this.value--;
     };
-    CounterComponent.prototype.increment = function () {
+    ChildDataBindingComponent.prototype.increment = function () {
         this.value++;
     };
-    return CounterComponent;
+    return ChildDataBindingComponent;
 }());
 __decorate([
     core_1.Input('value'),
     __metadata("design:type", Number)
-], CounterComponent.prototype, "varValue", void 0);
+], ChildDataBindingComponent.prototype, "varValue", void 0);
 __decorate([
     core_1.Output('value'),
     __metadata("design:type", Object)
-], CounterComponent.prototype, "varValueChangeEventEmitter", void 0);
-CounterComponent = __decorate([
+], ChildDataBindingComponent.prototype, "varValueChangeEventEmitter", void 0);
+ChildDataBindingComponent = __decorate([
     core_1.Component({
-        selector: 'counter',
+        selector: 'counter-databinding',
         templateUrl: './template/counter.component.template.html',
         styleUrls: ['./style/counter.component.css']
     }),
     __metadata("design:paramtypes", [])
-], CounterComponent);
-exports.CounterComponent = CounterComponent;
-//# sourceMappingURL=counter.component.js.map
+], ChildDataBindingComponent);
+exports.ChildDataBindingComponent = ChildDataBindingComponent;
+//# sourceMappingURL=counter.databinding.component.js.map

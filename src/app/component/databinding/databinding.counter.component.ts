@@ -2,11 +2,12 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
 import "rxjs/add/operator/catch";
 
 @Component({
-  selector: 'dashboard-component',
-  templateUrl: './template/dashboard.counter.component.template.html',
-  styleUrls: [ './style/dashboard.counter.component.css' ]
+  selector: 'data-binding-component',
+  template: `<h2>Data binding entre componentes</h2>
+             <p>Counter Atributo -> <span>{{valueCounter}}</span></p>
+             <counter-databinding [value]="valueCounter" (value)="countChange($event)"></counter-databinding>`
 })
-export class DashboardCounterComponent {
+export class DataBindingComponent {
 
   private valueCounter_: number;
 

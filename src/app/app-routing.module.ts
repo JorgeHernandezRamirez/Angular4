@@ -1,13 +1,14 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import {FormComponent} from "./component/form.component";
-import {DashboardCounterComponent} from "./component/dashboard.counter.component";
+import {FormComponent} from "./component/form/form.component";
+import {InteractionComponent} from "./component/interaction/interaction.component";
+import {DataBindingComponent} from "./component/databinding/databinding.counter.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/form', pathMatch: 'full' },
-  { path: 'form',     component: FormComponent},
-  { path: 'counter',     component: DashboardCounterComponent}
+  { path: 'form', component: FormComponent},
+  { path: 'databinding', component: DataBindingComponent},
+  { path: 'interaction', component: InteractionComponent}
 ];
 
 @NgModule({

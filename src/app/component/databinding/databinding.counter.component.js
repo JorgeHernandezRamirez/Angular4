@@ -11,11 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 require("rxjs/add/operator/catch");
-var DashboardCounterComponent = (function () {
-    function DashboardCounterComponent() {
+var DataBindingComponent = (function () {
+    function DataBindingComponent() {
         this.valueCounter_ = 10;
     }
-    Object.defineProperty(DashboardCounterComponent.prototype, "valueCounter", {
+    Object.defineProperty(DataBindingComponent.prototype, "valueCounter", {
         get: function () {
             return this.valueCounter_;
         },
@@ -25,18 +25,17 @@ var DashboardCounterComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    DashboardCounterComponent.prototype.countChange = function (event) {
+    DataBindingComponent.prototype.countChange = function (event) {
         this.valueCounter = event;
     };
-    return DashboardCounterComponent;
+    return DataBindingComponent;
 }());
-DashboardCounterComponent = __decorate([
+DataBindingComponent = __decorate([
     core_1.Component({
-        selector: 'dashboard-component',
-        templateUrl: './template/dashboard.counter.component.template.html',
-        styleUrls: ['./style/dashboard.counter.component.css']
+        selector: 'data-binding-component',
+        template: "<h2>Data binding entre componentes</h2>\n             <p>Counter Atributo -> <span>{{valueCounter}}</span></p>\n             <counter-databinding [value]=\"valueCounter\" (value)=\"countChange($event)\"></counter-databinding>"
     }),
     __metadata("design:paramtypes", [])
-], DashboardCounterComponent);
-exports.DashboardCounterComponent = DashboardCounterComponent;
-//# sourceMappingURL=dashboard.counter.component.js.map
+], DataBindingComponent);
+exports.DataBindingComponent = DataBindingComponent;
+//# sourceMappingURL=databinding.counter.component.js.map

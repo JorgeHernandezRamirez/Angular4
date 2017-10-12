@@ -1,0 +1,1 @@
+{"version":3,"file":"parent.localvariable.interaction.js","sourceRoot":"","sources":["parent.localvariable.interaction.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAwC;AAQxC,IAAa,uCAAuC;IANpD;QAQI,UAAK,GAAG,2CAA2C,CAAC;IACxD,CAAC;IAAD,8CAAC;AAAD,CAAC,AAHD,IAGC;AAHY,uCAAuC;IANnD,gBAAS,CAAC;QACP,QAAQ,EAAE,mCAAmC;QAC7C,QAAQ,EAAE,0MAE8E;KAC3F,CAAC;GACW,uCAAuC,CAGnD;AAHY,0FAAuC"}

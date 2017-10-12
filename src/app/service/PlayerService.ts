@@ -1,11 +1,11 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/Observable";
-import {Player} from "../component/player";
 import {IPlayerService} from "./IPlayerService";
 import {Headers, Http} from "@angular/http";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/catch";
 import "rxjs/add/operator/toPromise";
+import {Player} from "./player";
 
 @Injectable()
 export class PlayerService implements IPlayerService{

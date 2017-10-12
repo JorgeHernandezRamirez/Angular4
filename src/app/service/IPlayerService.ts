@@ -1,6 +1,5 @@
 import {Observable} from "rxjs/Observable";
-import {Player} from "../component/player";
-import {Subscription} from "rxjs/Subscription";
+import {Player} from "./player";
 
 export abstract class IPlayerService {
     abstract getPlayer(idPlayer: number): Observable<Player>;
