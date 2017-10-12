@@ -21,6 +21,12 @@ import {ChildLocalVariableInteractionComponent} from "./component/interaction/lo
 import {ParentLocalVariableInteractionComponent} from "./component/interaction/localvariable/parent.localvariable.interaction";
 import {ChildViewChildInteractionComponent} from "./component/interaction/viewchild/child.viewchild.interaction";
 import {ParentViewChildInteractionComponent} from "./component/interaction/viewchild/parent.viewchild.interaction";
+import {CommunicationService} from "./component/interaction/observable/communication.service";
+import {Component1ObservableInteractionComponent} from "./component/interaction/observable/component1.observable.interaction";
+import {Component2ObservableInteractionComponent} from "./component/interaction/observable/component2.obsevable.interaction";
+import {ParentObservableInteractionComponent} from "./component/interaction/observable/parent.obsevable.interaction";
+import {ChildEventEmitterVariableInteractionComponent} from "./component/interaction/eventemitter/child.eventemitter.interaction";
+import {ParentEventEmitterInteractionComponent} from "./component/interaction/eventemitter/parent.eventemitter.interaction";
 
 @NgModule({
   imports: [
@@ -44,10 +50,16 @@ import {ParentViewChildInteractionComponent} from "./component/interaction/viewc
     ChildLocalVariableInteractionComponent,
     ParentLocalVariableInteractionComponent,
     ParentViewChildInteractionComponent,
-    ChildViewChildInteractionComponent
+    ChildViewChildInteractionComponent,
+    Component1ObservableInteractionComponent,
+    Component2ObservableInteractionComponent,
+    ParentObservableInteractionComponent,
+    ChildEventEmitterVariableInteractionComponent,
+    ParentEventEmitterInteractionComponent
   ],
   providers: [
-    {provide: IPlayerService, useClass: PlayerService}
+    {provide: IPlayerService, useClass: PlayerService},
+    CommunicationService
   ],
   bootstrap: [AppComponent]
 })

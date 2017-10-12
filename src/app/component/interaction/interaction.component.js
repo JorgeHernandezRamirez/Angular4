@@ -17,7 +17,7 @@ var InteractionComponent = (function () {
 InteractionComponent = __decorate([
     core_1.Component({
         selector: 'interaction',
-        template: "<parent-pass-data-interaction></parent-pass-data-interaction>\n               <parent-ngonchange-interaction [mayor]=\"1\" [minor]=\"0\"></parent-ngonchange-interaction>\n               <parent-local-variable-interaction></parent-local-variable-interaction>\n               <parent-view-child-variable-interaction></parent-view-child-variable-interaction>"
+        template: "<parent-pass-data-interaction></parent-pass-data-interaction>\n               <parent-ngonchange-interaction [mayor]=\"1\" [minor]=\"0\"></parent-ngonchange-interaction>\n               <parent-local-variable-interaction></parent-local-variable-interaction>\n               <parent-view-child-variable-interaction></parent-view-child-variable-interaction>\n               <parent-observable-interaction></parent-observable-interaction>\n               <parent-event-emitter-interaction></parent-event-emitter-interaction>"
     })
 ], InteractionComponent);
 exports.InteractionComponent = InteractionComponent;

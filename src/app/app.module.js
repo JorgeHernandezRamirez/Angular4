@@ -28,6 +28,12 @@ var child_localvariable_interaction_1 = require("./component/interaction/localva
 var parent_localvariable_interaction_1 = require("./component/interaction/localvariable/parent.localvariable.interaction");
 var child_viewchild_interaction_1 = require("./component/interaction/viewchild/child.viewchild.interaction");
 var parent_viewchild_interaction_1 = require("./component/interaction/viewchild/parent.viewchild.interaction");
+var communication_service_1 = require("./component/interaction/observable/communication.service");
+var component1_observable_interaction_1 = require("./component/interaction/observable/component1.observable.interaction");
+var component2_obsevable_interaction_1 = require("./component/interaction/observable/component2.obsevable.interaction");
+var parent_obsevable_interaction_1 = require("./component/interaction/observable/parent.obsevable.interaction");
+var child_eventemitter_interaction_1 = require("./component/interaction/eventemitter/child.eventemitter.interaction");
+var parent_eventemitter_interaction_1 = require("./component/interaction/eventemitter/parent.eventemitter.interaction");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -56,10 +62,16 @@ AppModule = __decorate([
             child_localvariable_interaction_1.ChildLocalVariableInteractionComponent,
             parent_localvariable_interaction_1.ParentLocalVariableInteractionComponent,
             parent_viewchild_interaction_1.ParentViewChildInteractionComponent,
-            child_viewchild_interaction_1.ChildViewChildInteractionComponent
+            child_viewchild_interaction_1.ChildViewChildInteractionComponent,
+            component1_observable_interaction_1.Component1ObservableInteractionComponent,
+            component2_obsevable_interaction_1.Component2ObservableInteractionComponent,
+            parent_obsevable_interaction_1.ParentObservableInteractionComponent,
+            child_eventemitter_interaction_1.ChildEventEmitterVariableInteractionComponent,
+            parent_eventemitter_interaction_1.ParentEventEmitterInteractionComponent
         ],
         providers: [
-            { provide: IPlayerService_1.IPlayerService, useClass: PlayerService_1.PlayerService }
+            { provide: IPlayerService_1.IPlayerService, useClass: PlayerService_1.PlayerService },
+            communication_service_1.CommunicationService
         ],
         bootstrap: [app_component_1.AppComponent]
     })
