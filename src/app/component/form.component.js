@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var player_1 = require("./player");
-var IPlayerService_1 = require("../injectable/IPlayerService");
+var IPlayerService_1 = require("../service/IPlayerService");
 require("rxjs/add/operator/catch");
 var FormComponent = (function () {
     function FormComponent(playerService) {

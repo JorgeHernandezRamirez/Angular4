@@ -8,9 +8,9 @@ import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 
 import {AppComponent} from "./component/app.component";
 import {FormComponent} from "./component/form.component";
-import {IPlayerService} from "./injectable/IPlayerService";
-import {PlayerService} from "./injectable/PlayerService";
-import {InMemoryDataService} from "./injectable/in-memory-data.service";
+import {IPlayerService} from "./service/IPlayerService";
+import {PlayerService} from "./service/PlayerService";
+import {InMemoryDataService} from "./service/in-memory-data.service";
 import {CounterComponent} from "./component/counter.component";
 import {DashboardCounterComponent} from "./component/dashboard.counter.component";
 

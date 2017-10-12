@@ -1,3 +1,4 @@
+<h2>Estado formulario</h2>
 <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
   Name: <input  id="name" formControlName="name"  placeholder="Enter Name">
   Age: <input formControlName="age"  placeholder="Enter Age">
@@ -14,13 +15,7 @@
   El año debe contener dos caracteres como maximo y es requerido
 </p>
 
-<div *ngIf="player != undefined">
-  El jugador seleccionado es {{player.name}}
-</div>
-<input #idPlayerVar [(ngModel)]="idPlayer" placeholder="id" />
-<button (click)="find(idPlayerVar.value)">Buscar jugador</button>
-
-<h1>Players</h1>
+<h2>Crud</h2>
 <div *ngFor="let player of players | async">
   <div>
     <span>{{player.name}}</span>
@@ -29,7 +24,13 @@
   </div>
 </div>
 
-<h1>Alta jugador</h1>
+<div *ngIf="player != undefined">
+  El jugador seleccionado es {{player.name}}
+</div>
+<input #idPlayerVar [(ngModel)]="idPlayer" placeholder="id" />
+<button (click)="find(idPlayerVar.value)">Buscar jugador</button>
+
+<p>Alta jugador</p>
 <input #newPlayerId placeholder="Id del nuevo jugador" />
 <input #newPlayerName placeholder="Nombre del nuevo jugador" />
 <button (click)="create(newPlayerId.value, newPlayerName.value)">Nuevo jugador</button>
